@@ -2,7 +2,7 @@
 
 ## Installation
 **You need Node and NPM (Node Package Manager)**
-`npm install bakalari.js`
+`npm install @godlessssss/bakalari.js`
 
 ## Usage
 ```js
