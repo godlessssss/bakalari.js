@@ -7,7 +7,7 @@
 ## Usage
 ```js
 // Requiring the library from npm
-const Bakalari = require('bakalari.js')
+const Bakalari = require('@godlessssss/bakalari.js')
 
 // Instancing a user with url, username and password
 let client = new Bakalari.User('URL', 'USERNAME', 'PASSWORD')
