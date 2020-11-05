@@ -2,6 +2,7 @@
 
 ## Installation
 **You need Node and NPM (Node Package Manager)**
+
 `npm install @godlessssss/bakalari.js`
 
 ## Usage
@@ -23,3 +24,12 @@ client.on('ready', async () => {
     console.log(marks)
 });
 ```
+
+## Available Modules
+
+* Bakalari.Modules.Marks => returns all marks
+* Bakalari.Modules.Subjects => returns all subjects
+* Bakalari.Modules.Absence => returns your absence
+* Bakalari.Modules.Events => returns all events
+* Bakalri.Modules.Homeworks => returns all homeworks
+* Bakalari.Modules.UserInfo => returns info about currently logged in user

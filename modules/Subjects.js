@@ -3,13 +3,13 @@
 const HTTPHandler = require('./HTTPHandler');
 
 
-class Marks extends HTTPHandler {
+class Subjects extends HTTPHandler {
     constructor() {
         super();
     };
     async get({ url, access_token }) {
-        return this.getData(url, access_token, 'marks')
+        return this.getData(url, access_token, 'subjects')
     }
 }
 
-module.exports = Marks
+module.exports = Subjects
