@@ -1,9 +1,9 @@
 'use strict';
 
-const HTTPHandler = require('./HTTPHandler');
+import HTTPHandler from './HTTPHandler'
 
 
-class Absence extends HTTPHandler {
+export default class Absence extends HTTPHandler {
     constructor() {
         super();
     };
@@ -11,5 +11,3 @@ class Absence extends HTTPHandler {
         return this.getData(url, access_token, 'absence/student')
     }
 }
-
-module.exports = Absence

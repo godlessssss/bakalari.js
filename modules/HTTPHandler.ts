@@ -1,8 +1,8 @@
 'use strict';
 
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
-class HTTPHandler {
+export default class HTTPHandler {
     async getData(url, access_token, moduleName) {
         let res = await fetch(`${url}/api/3/${moduleName}`, {
             method: 'GET',
@@ -15,5 +15,3 @@ class HTTPHandler {
         return data
     }
 };
-
-module.exports = HTTPHandler;

@@ -1,15 +1,13 @@
 'use strict';
 
-const HTTPHandler = require('./HTTPHandler');
+import HTTPHandler from './HTTPHandler'
 
 
-class Subjects extends HTTPHandler {
+export default class Subjects extends HTTPHandler {
     constructor() {
         super();
     };
     async get({ url, access_token }) {
         return this.getData(url, access_token, 'subjects')
     }
-}
-
-module.exports = Subjects
+};

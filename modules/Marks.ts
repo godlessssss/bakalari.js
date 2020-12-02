@@ -1,9 +1,9 @@
 'use strict';
 
-const HTTPHandler = require('./HTTPHandler');
+import HTTPHandler from './HTTPHandler'
 
 
-class Marks extends HTTPHandler {
+export default class Marks extends HTTPHandler {
     constructor() {
         super();
     };
@@ -11,5 +11,3 @@ class Marks extends HTTPHandler {
         return this.getData(url, access_token, 'marks')
     }
 }
-
-module.exports = Marks
