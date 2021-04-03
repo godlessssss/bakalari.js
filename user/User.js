@@ -20,6 +20,11 @@ class User extends EventEmitter {
         let data = await res.json()
         this.access_token = data.access_token;
         this.refresh_token = data.refresh_token;
+        if (this.refresh_token) {
+            setTimeout(() => {
+                this.refreshToken()
+            }, data.expires_in * 1000 - 5000)
+        }
         this.emit('ready')
     }
 
@@ -31,6 +36,11 @@ class User extends EventEmitter {
         }).then(res => res.json()).then(data => {
             this.access_token = data.access_token;
             this.refresh_token = data.refresh_token;
+            if (this.refresh_token) {
+                setTimeout(() => {
+                    this.refreshToken()
+                }, data.expires_in * 1000 - 5000)
+            }
         });
     }
 
