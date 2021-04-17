@@ -1,11 +1,15 @@
 # bakalari.js
 
+A *simple* JavaScript Bakaláři API wrapper.
+
 ## Installation
-**You need Node and NPM (Node Package Manager)**
+
+*You need Node and NPM (Node Package Manager)*
 
 `npm install @godlessssss/bakalari.js`
 
 ## Usage
+
 ```js
 // Requiring the library from npm
 const Bakalari = require('@godlessssss/bakalari.js')
