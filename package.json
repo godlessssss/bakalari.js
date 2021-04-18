@@ -1,6 +1,6 @@
 {
   "name": "@godlessssss/bakalari.js",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "A simple Bakalari API wrapper written in JavaScript",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/godlessssss/bakalari.js.git"
   },
-  "keywords": ["bakalari", "api", "wrapper", "javascript"],
+  "keywords": [
+    "bakalari",
+    "api",
+    "wrapper",
+    "javascript"
+  ],
   "author": "godlessssss",
   "license": "ISC",
   "bugs": {
