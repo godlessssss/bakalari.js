@@ -83,3 +83,9 @@ await client.get(Bakalari.Modules.Timetable)
 ```js
 await client.get(Bakalari.Modules.Timetable, 'actual')
 ```
+
+#### Bakalari.Modules.Substitutions
+```js
+await client.get(Bakalari.Modules.Substitutions)
+```
+- returns Array of Substitutions
