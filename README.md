@@ -31,9 +31,61 @@ client.on('ready', async () => {
 
 ## Available Modules
 
-* Bakalari.Modules.Marks => returns all marks
-* Bakalari.Modules.Subjects => returns all subjects
-* Bakalari.Modules.Absence => returns your absence
-* Bakalari.Modules.Events => returns all events
-* Bakalri.Modules.Homeworks => returns all homeworks
-* Bakalari.Modules.UserInfo => returns info about currently logged in user
+### Main function
+```js
+await client.get(Module, ...Arguments)
+```
+
+#### Bakalari.Modules.Marks
+```js
+await client.get(Bakalari.Modules.Marks)
+```
+- returns Array of Subjects, that contain Marks Array
+
+#### Bakalari.Modules.Subjects
+```js
+await client.get(Bakalari.Modules.Subjects)
+```
+- returns Array of Subjects
+
+#### Bakalari.Modules.Absence
+```js
+await client.get(Bakalari.Modules.Absence)
+```
+- returns Absence Array and Absence by Subject Array
+
+#### Bakalari.Modules.Events
+```js
+await client.get(Bakalari.Modules.Events)
+```
+- returns Array of Events
+
+#### Bakalri.Modules.Homeworks
+```js
+await client.get(Bakalari.Modules.Homeworks)
+```
+- returns Array of Homeworks
+
+#### Bakalari.Modules.UserInfo
+```js
+await client.get(Bakalari.Modules.UserInfo)
+```
+- returns User Object
+
+#### Bakalari.Modules.Timetable
+
+- Permanent Timetable
+```js
+await client.get(Bakalari.Modules.Timetable)
+```
+
+- Actual Timetable
+```js
+await client.get(Bakalari.Modules.Timetable, 'actual')
+```
+
+#### Bakalari.Modules.Substitutions
+```js
+await client.get(Bakalari.Modules.Substitutions)
+```
+- returns Array of Substitutions

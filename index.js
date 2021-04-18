@@ -9,6 +9,8 @@ module.exports = {
         Absence: require('./modules/Absence'),
         Events: require('./modules/Events'),
         Homeworks: require('./modules/Homeworks'),
-        UserInfo: require('./modules/UserInfo')
+        UserInfo: require('./modules/UserInfo'),
+        Timetable: require('./modules/Timetable'),
+        Substitutions: require('./modules/Substitutions')
     }
 }

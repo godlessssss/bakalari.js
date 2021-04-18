@@ -44,8 +44,8 @@ class User extends EventEmitter {
         });
     }
 
-    get(moduleType) {
-        return new moduleType().get({ url: this.url, access_token: this.access_token })
+    get(moduleType, ...args) {
+        return new moduleType().get({ url: this.url, access_token: this.access_token, args: args })
     }
 
 };
