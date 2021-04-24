@@ -13,7 +13,7 @@ class Timetable extends HTTPHandler {
             let date = new Date()
             endpoint = `timetable/actual?date=${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
         }
-        return this.getData(url, access_token, endpoint)
+        return this.getData(url, access_token, endpoint, 'GET', 'application/x-www-form-urlencoded')
     }
 }
 

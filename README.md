@@ -89,3 +89,35 @@ await client.get(Bakalari.Modules.Timetable, 'actual')
 await client.get(Bakalari.Modules.Substitutions)
 ```
 - returns Array of Substitutions
+
+#### Bakalari.Modules.FinalMarks
+```js
+await client.get(Bakalari.Modules.FinalMarks)
+```
+- returns Array of school certificates
+
+#### Bakalari.Modules.Whatif
+```js
+await client.get(Bakalari.Modules.Whatif, array_of_marks)
+```
+
+- Example
+```js
+await client.get(Bakalari.Modules.Whatif, [
+    {
+        MarkText: '1',
+        Weight: 4,
+        SubjectId: ' 2',
+        Id: null,
+        MaxPoints: 0
+    }
+])
+```
+
+**MarkText:** *The mark you want to add* <br />
+**Weight:** *Weight of mark* <br />
+**SubjectId:** *The ID of the subject you want to predict* <br />
+**Id:** *The ID of mark - prediction marks always null* <br />
+**MaxPoints:** *Maximum number of points to get*
+
+- returns Array of Marks with presumed subject average

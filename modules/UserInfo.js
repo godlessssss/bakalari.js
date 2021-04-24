@@ -8,7 +8,7 @@ class UserInfo extends HTTPHandler {
         super();
     };
     async get({ url, access_token }) {
-        return this.getData(url, access_token, 'user')
+        return this.getData(url, access_token, 'user', 'GET', 'application/x-www-form-urlencoded')
     }
 }
 
