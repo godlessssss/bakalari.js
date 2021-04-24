@@ -8,7 +8,7 @@ class Whatif extends HTTPHandler {
     };
     async get({ url, access_token, args }) {
 
-        const marks = await this.getData(url, access_token, 'marks', 'GET', 'application/x-www-form-urlencoded', '');
+        const marks = await this.getData(url, access_token, 'marks', 'GET', 'application/x-www-form-urlencoded');
         const subjectId = args[0][0].SubjectId;
 
         let requiredSubjectMarks = marks.Subjects.find(subj => Number(subj.Subject.Id) === Number(subjectId));
