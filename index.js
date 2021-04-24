@@ -12,6 +12,7 @@ module.exports = {
         UserInfo: require('./modules/UserInfo'),
         Timetable: require('./modules/Timetable'),
         Substitutions: require('./modules/Substitutions'),
-        Whatif: require('./modules/Whatif')
+        Whatif: require('./modules/Whatif'),
+        MarksFinal: require('./modules/MarksFinal')
     }
 }
