@@ -8,7 +8,7 @@ class Marks extends HTTPHandler {
         super();
     };
     async get({ url, access_token }) {
-        return this.getData(url, access_token, 'marks')
+        return this.getData(url, access_token, 'marks', 'GET', 'application/x-www-form-urlencoded')
     }
 }
 
