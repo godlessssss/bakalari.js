@@ -90,6 +90,12 @@ await client.get(Bakalari.Modules.Substitutions)
 ```
 - returns Array of Substitutions
 
+#### Bakalari.Modules.FinalMarks
+```js
+await client.get(Bakalari.Modules.FinalMarks)
+```
+- returns Array of school certificates
+
 #### Bakalari.Modules.Whatif
 ```js
 await client.get(Bakalari.Modules.Whatif, array_of_marks)
