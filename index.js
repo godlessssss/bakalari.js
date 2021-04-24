@@ -11,6 +11,7 @@ module.exports = {
         Homeworks: require('./modules/Homeworks'),
         UserInfo: require('./modules/UserInfo'),
         Timetable: require('./modules/Timetable'),
-        Substitutions: require('./modules/Substitutions')
+        Substitutions: require('./modules/Substitutions'),
+        Whatif: require('./modules/Whatif')
     }
 }
