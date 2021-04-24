@@ -8,7 +8,7 @@ class Absence extends HTTPHandler {
         super();
     };
     async get({ url, access_token }) {
-        return this.getData(url, access_token, 'absence/student')
+        return this.getData(url, access_token, 'absence/student', 'GET', 'application/x-www-form-urlencoded', '')
     }
 }
 
