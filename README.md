@@ -108,10 +108,10 @@ await client.get(Bakalari.Modules.Whatif, [
 ])
 ```
 
-*MarkText: The mark you want to add* <br />
-*Weight: Weight of mark* <br />
-*SubjectId: The ID of the subject you want to predict* <br />
-*Id: The ID of mark - prediction marks always null* <br />
-*MaxPoints: Maximum number of points to get*
+**MarkText:** *The mark you want to add* <br />
+**Weight:** *Weight of mark* <br />
+**SubjectId:** *The ID of the subject you want to predict* <br />
+**Id:** *The ID of mark - prediction marks always null* <br />
+**MaxPoints:** *Maximum number of points to get*
 
 - returns Array of Marks with presumed subject average
