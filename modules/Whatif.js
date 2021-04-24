@@ -1,7 +1,6 @@
 'use strict';
 
 const HTTPHandler = require('./HTTPHandler');
-const fetch = require('node-fetch');
 
 class Whatif extends HTTPHandler {
     constructor() {
