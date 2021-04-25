@@ -120,7 +120,7 @@ await client.get(Bakalari.Modules.Whatif, [
 
 **SubjectId:** *The ID of the subject you want to predict - use Subjects module to get the ID*
 
-**Id:** *The ID of mark - prediction marks is always null*
+**Id:** *The ID of mark - prediction marks are always null*
 
 **MaxPoints:** *Maximum number of points to get - this is only used when you use points system*
 
